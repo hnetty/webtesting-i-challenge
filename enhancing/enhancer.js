@@ -14,7 +14,12 @@ function fail(item) {
 }
 
 function repair(item) {
-  return { ...item };
+  if (item < 100){
+    item = 100;
+    return {item};
+  } else {
+    return {item};
+  };
 }
 
 function get(item) {
